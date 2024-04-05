@@ -73,11 +73,11 @@ public class binary_search {
 
 
      //print subarray
-/* 
-     public static void printSubarray(int numbers[]){
+ 
+ /*     public static void printSubarray(int numbers[]){
         for(int i=0; i<numbers.length; i++){
             int start = i;
-            for(int j=0; j<numbers.length; j++){
+            for(int j=i; j<numbers.length; j++){
                 int end =j; 
                 for(int k=start; k<=end; k++){
                     System.out.print(numbers[k]+" ");
@@ -92,19 +92,24 @@ public class binary_search {
         int numbers[]={ 2,4,6,8,10};
         printSubarray(numbers);
      }
+
      */
+     
 
 
      //to print sum of sub arrays
-     /* 
+     
      public static void sum_of_subarrays(int numbers[]){
         for(int i=0; i<numbers.length; i++){         
             for (int j=i; j<numbers.length; j++){
                 int sum=0;
                 for(int k=i; k<=j; k++){
                     sum+=numbers[k];
+
+                    System.out.print(numbers[k] +" ");
                 }
-               System.out.print(sum +" ");
+                System.out.println("(sum is:"+sum +")");
+               
             }
             System.out.println();
        
@@ -115,40 +120,40 @@ public class binary_search {
         int numbers[]={2,4,6,8,10};
         sum_of_subarrays(numbers);
      }
-     */
+     
 
      // max subarray sum
       
-     public static void maxSubarraySum(int numbers[]) {
-        int maxSum = Integer.MIN_VALUE;
-        int currSum = 0;
+    //  public static void maxSubarraySum(int numbers[]) {
+    //     int maxSum = Integer.MIN_VALUE;
+    //     int currSum = 0;
     
-        for (int i = 0; i < numbers.length; i++) {
-            int start = i;
+    //     for (int i = 0; i < numbers.length; i++) {
+    //         int start = i;
     
-            for (int j = i; j < numbers.length; j++) {
-                int end = j;
-                currSum = 0;
+    //         for (int j = i; j < numbers.length; j++) {
+    //             int end = j;
+    //             currSum = 0;
     
-                for (int k = start; k <= end; k++) {
-                    currSum += numbers[k];
-                }
+    //             for (int k = start; k <= end; k++) {
+    //                 currSum += numbers[k];
+    //             }
     
-                System.out.println(currSum);
+    //             System.out.println(currSum);
     
-                if (maxSum < currSum) {
-                    maxSum = currSum;
-                }
-            }
-        }
+    //             if (maxSum < currSum) {
+    //                 maxSum = currSum;
+    //             }
+    //         }
+    //     }
     
-        System.out.println("max sum = " + maxSum);
-    }
+    //     System.out.println("max sum = " + maxSum);
+    // }
     
-    public static void main(String[] args) {
-        int numbers[] = {1, -2, 6, -1, 3};
-        maxSubarraySum(numbers);
-    }
+    // public static void main(String[] args) {
+    //     int numbers[] = {1, -2, 6, -1, 3};
+    //     maxSubarraySum(numbers);
+    // }
     
 
 
