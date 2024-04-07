@@ -9,13 +9,13 @@ public class Creating2Darray {
         // Create a Scanner object 'sc' to read input from the user
         Scanner sc= new Scanner(System.in);
         // Input loop: Iterate over rows and columns of the matrix to get input from the user
-        for(int i=0; i<matrix.length; i++){
-            for(int j = 0; j<matrix[0].length; j++){
+         for(int i=0; i<matrix.length; i++){
+             for(int j = 0; j<matrix[0].length; j++){
                 // Read an integer input from the user and assign it to the current element of the matrix
                 matrix[i][j]=sc.nextInt();
-            }
+             }
 
-        }
+         }
         //output
         for(int i=0; i<matrix.length; i++){
             for(int j = 0; j<matrix[0].length; j++){
