@@ -10,7 +10,7 @@ public class stackArrayList {
             return List.size()==0;
             }
         // push
-        public static void push(int data){
+        public void push(int data){
             List.add(data);
         }
         // pop
@@ -31,7 +31,7 @@ public class stackArrayList {
         }
 
     }
-    public static void main(String[]args){
+    public void main(String[]args){
         stack s = new stack();
         s.push(1);
         s.push(2);
