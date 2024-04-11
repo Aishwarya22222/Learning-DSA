@@ -1,4 +1,4 @@
-package twoDarray;
+package twoDarray.Questions;
 
 public class QuestionOne {
     // Print the number of 7’s that are in the 2d array

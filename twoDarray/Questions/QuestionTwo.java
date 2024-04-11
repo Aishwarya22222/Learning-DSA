@@ -1,7 +1,7 @@
-package twoDarray;
+package twoDarray.Questions;
 
 public class QuestionTwo {
-    // Print out the sum of the numbers inthe second row of the “nums” array
+    // Print out the sum of the numbers in the second row of the “nums” array
     public static void main(String[]args){
         int nums[][]={ {1,4,9},{11,4,3},{2,2,3} };
         int sum= 0;

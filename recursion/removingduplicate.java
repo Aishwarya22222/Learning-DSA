@@ -6,10 +6,13 @@ public class removingduplicate {
         System.out.println(newStr);
         return;
        }
-    //    kaam
+    // stringma vako idx ko value currCahr lai assign gareko
     char currChar = str.charAt(idx);
+    //if currChar is already seen in the map then skip it and move to the next index
     if (map[currChar-'a']==true){
         removeDuplicates(str, idx+1, newStr, map);
+
+    //if currchar is not seen int he map then make it seen and append it to the newStr.
     }else{
         map[currChar- 'a']= true;
         removeDuplicates(str, idx+1, newStr.append(currChar), map);

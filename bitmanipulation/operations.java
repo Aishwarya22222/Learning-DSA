@@ -19,14 +19,14 @@ public class operations {
 
 
     //Set ith bit
-    /*public static int setIthBit(int n, int i){
+    public static int setIthBit(int n, int i){
         int bitMask=1<<i;
         return n | bitMask;
     }
     public static void main(String[] args) {
-        System.out.println(setIthBit(10, 2));
+        System.out.println(setIthBit(10, 0));
     }
-    */
+    
 
     // clear ith bit
     /* 
@@ -42,11 +42,13 @@ public class operations {
     */
 
     // update ith bit
+    /* 
     public static int updateIthbit(int n, int i, int newBit){
         
     }
     public static void main(String[] args) {
         
     }
+    */
     
 }
